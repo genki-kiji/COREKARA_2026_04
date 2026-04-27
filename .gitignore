@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 *.code-workspace
+
+# resources
+COREKARA_LP/
