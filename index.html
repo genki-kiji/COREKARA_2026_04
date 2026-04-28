@@ -2,13 +2,153 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/img/COREKARA_logo.jpg" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="/src/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project1-1</title>
   </head>
   <body>
-    <h3 class="text-red-500 text-3xl font-bold">Tailwind</h3>
+    <section id="top" class="flex w-full flex-col">
+      <div class="flex w-full">
+        <a
+          href="#"
+          class="flex w-1/2 items-center justify-center bg-neutral-800 text-center"
+        >
+          <h1>
+            <span class="text-20px font-bold text-white">就労支援施設</span
+            ><br /><span class="text-20px font-bold text-[#FDECBE]"
+              >COREKARA</span
+            >
+          </h1>
+        </a>
+        <p
+          class="flex w-1/2 items-center justify-center bg-[#0071BD] text-center text-20px break-keep text-white"
+        >
+          一緒に自由に<wbr />踏み出そう
+        </p>
+      </div>
+      <div class="relative flex h-auto w-full">
+        <img
+          src="/img/top.jpg"
+          class="block h-auto w-full object-cover"
+          alt="これからを一緒に見つける就労支援です"
+        />
+        <div class="absolute bottom-[5%] left-1/2 w-[90%] translate-x-[-50%]">
+          <p
+            class="flex w-full justify-center py-[5px] text-center text-16px font-bold text-[#4D4B4E]"
+          >
+            見学・体験はいつでも可能です。
+          </p>
+          <p
+            class="flex w-full justify-center rounded-2xl bg-[#EE94AE] py-[5px] text-center text-16px font-bold text-white"
+          >
+            まずは、お話だけでも構いません。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Overview" class="flex w-full flex-col">
+      <div id="message" class="relative flex w-full flex-col">
+        <img
+          src="/img/top_2.jpg"
+          alt="できるかどうかよりもどうしたらできるかを一緒に考えていきます。"
+        />
+        <div class="absolute top-[2%] left-1/2 w-full translate-x-[-50%]">
+          <h2 class="mx-auto flex w-fit flex-col text-center">
+            <span class="py-[2px] text-base font-bold">MESSAGE</span
+            ><span
+              class="rounded-4xl bg-[#0071BD] px-[12px] py-[2px] text-16px font-bold text-white"
+              >COREKARAが大切にしていること</span
+            >
+          </h2>
+        </div>
+      </div>
+      <div id="pricritize" class="relative flex w-full flex-col">
+        <img src="/img/kangaekata.jpg" class="w-full object-cover" />
+        <div class="absolute top-[10%] left-1/2 flex translate-[-50%]">
+          <h2 class="mx-auto flex w-[400px] flex-col text-center">
+            <span class="py-[2px] text-base font-bold">PRICRITIZE</span>
+            <span class="py-[2px] text-16px font-bold">私たちの考え方</span>
+          </h2>
+        </div>
+        <div
+          class="absolute top-[18%] bottom-[55%] left-[5%] flex w-[50%] flex-col justify-center break-keep"
+        >
+          <p class="text-20px font-bold text-white">無理に急がせません</p>
+          <p class="text-14px">
+            あなたのペースを大切に。焦らなくていいから<wbr />自分のペースで！
+          </p>
+        </div>
+        <div
+          class="absolute top-[45%] bottom-[28%] left-[40%] flex w-[55%] flex-col justify-center text-end break-keep"
+        >
+          <p class="text-20px font-bold text-white">小さな一歩を大切に</p>
+          <p class="text-14px">
+            「今日はいけた。」毎日通所できる<wbr />事から始めましょう。
+          </p>
+        </div>
+        <div
+          class="absolute top-[72%] bottom-[0%] left-[5%] flex w-[60%] flex-col justify-center"
+        >
+          <p class="text-20px font-bold break-keep text-white">
+            一人ひとりに<wbr />合わせた支援
+          </p>
+          <p class="text-14px">
+            一様に同じプログラムを押し付けません。安心してください。
+          </p>
+        </div>
+      </div>
+      <div id="service" class="flex w-full flex-col">
+        <h2 class="mx-auto flex flex-col text-center">
+          <span class="text-base font-bold">service</span>
+          <span class="text-24px font-extrabold">2つのサービスをご提供</span>
+        </h2>
+        <img src="/img/service.jpg" />
+        <div
+          class="mt-[30px] flex flex-col gap-[30px] bg-[url('/img/back_green.jpg')] px-[30px]"
+        >
+          <div
+            class="mx-auto -mt-[20px] flex w-full max-w-[600px] flex-col gap-[10px]"
+          >
+            <img src="/img/ikou.png" class="block" alt="就労移行支援" />
+            <img src="/img/COREKARA.png" class="block" alt="COREKARA" />
+          </div>
+          <p class="w-full max-w-[700px] text-16px">
+            一般企業への就職を目指しながら生活リズムを整え、パソコンスキルを身につけます。また、仕事に必要なコミュニケーションや、就職活動についても丁寧にご案内いたします。
+          </p>
+          <div class="flex w-full flex-col p-[24px]">
+            <img src="/img/ippan.png" alt="一般企業で働きたい方には" class="" />
+            <img src="/img/ippan_img.jpg" aly="一般企業で働くイメージ" />
+            <p>
+              就職を目指す方とともに、「自分に合う働き方」を探していきます。強みや特性に寄り添いながら、「できること」「向いていること」を少しずつ整理し、無理のないステップで実践的な経験を積み重ねていきます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      id="viewport-check"
+      style="
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 8px;
+        font-size: 14px;
+      "
+    ></div>
+    <script>
+      document.getElementById("viewport-check").textContent =
+        `innerWidth: ${window.innerWidth}px / DPR: ${window.devicePixelRatio}`;
+    </script>
   </body>
 </html>
