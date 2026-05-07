@@ -5,4 +5,10 @@
     box-sizing: border-box;
     font-family: "Noto Sans JP", sans-serif;
   }
+  p {
+    text-wrap: balance;
+    line-break: strict;
+    word-break: auto-phrase;
+    @apply leading-relaxed;
+  }
 }

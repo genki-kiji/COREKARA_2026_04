@@ -57,8 +57,9 @@
     <section id="Overview" class="flex w-full flex-col">
       <div id="message" class="relative flex w-full flex-col">
         <img
-          src="/img/top_2.jpg"
+          src="/img/top_2.png"
           alt="できるかどうかよりもどうしたらできるかを一緒に考えていきます。"
+          class="block object-cover"
         />
         <div class="absolute top-[2%] left-1/2 w-full translate-x-[-50%]">
           <h2 class="mx-auto flex w-fit flex-col text-center">
@@ -70,11 +71,18 @@
           </h2>
         </div>
       </div>
-      <div id="pricritize" class="relative flex w-full flex-col">
-        <img src="/img/kangaekata.jpg" class="w-full object-cover" />
+      <div
+        id="priorities"
+        class="relative flex aspect-[375/600] w-full flex-col overflow-hidden"
+      >
+        <img
+          src="/img/kangaekata.jpg"
+          class="block h-full w-full object-cover object-center"
+          alt="priorities"
+        />
         <div class="absolute top-[10%] left-1/2 flex translate-[-50%]">
-          <h2 class="mx-auto flex w-[60%] max-w-[450px] flex-col text-center">
-            <span class="py-[2px] text-base font-bold">PRICRITIZE</span>
+          <h2 class="mx-auto flex w-[100%] max-w-[450px] flex-col text-center">
+            <span class="py-[2px] text-base font-bold">PRIORITIES</span>
             <span class="py-[2px] text-16px font-bold">私たちの考え方</span>
           </h2>
         </div>
@@ -105,41 +113,53 @@
           </p>
         </div>
       </div>
-      <div id="service" class="flex w-full flex-col">
+    </section>
+    <section id="service">
+      <div id="service" class="mt-[30px] flex w-full flex-col">
         <h2 class="mx-auto flex flex-col text-center">
           <span class="text-base font-bold">service</span>
           <span class="text-24px font-extrabold">2つのサービスをご提供</span>
         </h2>
-        <img src="/img/service.jpg" class="object-cover" />
+        <img src="/img/service.png" class="block object-cover" />
+      </div>
+      <section id="ikousien">
         <div
-          class="mt-[30px] flex flex-col gap-[30px] bg-[url('/img/back_green.jpg')] px-[30px]"
+          class="mt-[30px] flex flex-col items-center gap-[30px] bg-[url('/img/back_green.jpg')] px-[30px]"
         >
           <div
-            class="mx-auto -mt-[20px] flex w-full max-w-[600px] flex-col items-center gap-[10px] overflow-hidden"
+            class="mx-auto mt-[-20px] flex w-full max-w-[600px] flex-col items-center gap-[10px] overflow-hidden"
           >
-            <img
-              src="/img/ikou.png"
-              class="block w-[120%] max-w-none"
-              alt="就労移行支援"
-            />
-            <img
-              src="/img/COREKARA.png"
-              class="block w-[120%] max-w-none"
-              alt="COREKARA"
-            />
+            <h3 class="flex w-full flex-col items-center">
+              <img
+                src="/img/ikou.png"
+                class="block w-[120%] max-w-none"
+                alt="就労移行支援"
+              />
+              <img
+                src="/img/COREKARA.png"
+                class="block w-[120%] max-w-none"
+                alt="COREKARA"
+              />
+            </h3>
           </div>
-          <p class="w-full max-w-[700px] text-16px">
+          <p class="w-full max-w-[700px] text-justify text-16px">
             一般企業への就職を目指しながら生活リズムを整え、パソコンスキルを身につけます。また、仕事に必要なコミュニケーションや、就職活動についても丁寧にご案内いたします。
           </p>
           <div
             class="flex w-full max-w-[700px] flex-col items-center gap-[10px] overflow-hidden rounded-2xl border-[4px] border-dotted border-lime-600 bg-white p-[24px]"
           >
+            <h4 class="flex w-full flex-col items-center">
+              <img
+                src="/img/ippan.png"
+                alt="一般企業で働きたい方には"
+                class="block w-[140%] max-w-none"
+              />
+            </h4>
             <img
-              src="/img/ippan.png"
-              alt="一般企業で働きたい方には"
-              class="block w-[140%] max-w-none"
+              src="/img/ippan_img.jpg"
+              alt="一般企業で働くイメージ"
+              class="block"
             />
-            <img src="/img/ippan_img.jpg" aly="一般企業で働くイメージ" />
             <p class="text-base text-yellow-700">
               就職を目指す方とともに、「自分に合う働き方」を探していきます。強みや特性に寄り添いながら、「できること」「向いていること」を少しずつ整理し、無理のないステップで実践的な経験を積み重ねていきます。
             </p>
@@ -147,12 +167,18 @@
           <div
             class="flex w-full max-w-[700px] flex-col items-center gap-[10px] overflow-hidden rounded-2xl border-[4px] border-dotted border-lime-600 bg-white p-[24px]"
           >
+            <h4 class="flex w-full flex-col items-center">
+              <img
+                src="/img/jimu.png"
+                alt="事務系で働きたい方には"
+                class="block w-[140%] max-w-none"
+              />
+            </h4>
             <img
-              src="/img/jimu.png"
-              alt="一般企業で働きたい方には"
-              class="block w-[140%] max-w-none"
+              src="/img/jimu_img.jpg"
+              aly="事務系で働くイメージ"
+              class="block"
             />
-            <img src="/img/jimu_img.jpg" aly="一般企業で働くイメージ" />
             <p class="text-base text-yellow-700">
               近年、PC操作のスキルは就職において欠かせないものとなっています。一般企業で求められるITスキルを学びながら、就職先の選択肢を広げていきます。個別に進めるため、【パソコン基礎】からWordやExcelなどのOfficeソフトまで無理なく習得し、職場で長く働くための力を育てていきます。
             </p>
@@ -160,19 +186,463 @@
           <div
             class="flex w-full max-w-[700px] flex-col items-center gap-[10px] overflow-hidden rounded-2xl border-[4px] border-dotted border-lime-600 bg-white p-[24px]"
           >
-            <img
-              src="/img/IT.png"
-              alt="一般企業で働きたい方には"
-              class="block w-[140%] max-w-none"
-            />
-            <img src="/img/IT_img.jpg" aly="一般企業で働くイメージ" />
+            <h4 class="flex w-full flex-col items-center">
+              <img
+                src="/img/IT.png"
+                alt="IT業界で働きたい方には"
+                class="block w-[140%] max-w-none"
+              />
+            </h4>
+            <img src="/img/IT_img.jpg" aly="ITで働くイメージ" class="block" />
             <p class="text-base text-yellow-700">
-              近年、PC操作のスキルは就職において欠かせないものとなっています。一般企業で求められるITスキルを学びながら、就職先の選択肢を広げていきます。個別に進めるため、【パソコン基礎】からWordやExcelなどのOfficeソフトまで無理なく習得し、職場で長く働くための力を育てていきます。
+              個別に進めるため、グラフィックやWeb、動画編集に加え、独学では難しいプログラミングやWeb言語も無理なく学んでいけます。
+              実際のクライアント案件を教材にすることで、広告業界のリアルな仕事の流れを体験できます。
+              PCが苦手な方でも、デザインが好きという気持ちに寄り添いながら、丁寧に進めていきます。
             </p>
+          </div>
+          <div class="flex w-full max-w-[380px] flex-col items-center">
+            <div class="flex w-full rounded-2xl bg-[#FDEE21] p-[16px]">
+              <p class="text-2xl font-bold text-[#046CB4]">
+                訓練や実習を通して、<br />
+                <span class="text-outline break-keep"
+                  >一般企業や<wbr />障がい者枠<wbr />での就職</span
+                ><br />
+                につなげていきます。
+              </p>
+            </div>
+            <div
+              class="mt-[-1px] h-0 w-0 border-x-[20px] border-t-[20px] border-x-transparent border-t-[#FDEE21]"
+            ></div>
+          </div>
+          <div
+            class="flex w-full max-w-[700px] items-center justify-center overflow-hidden"
+          >
+            <img
+              src="/img/dekirukadouka.png"
+              class="mb-[30px] block w-[120%] max-w-[none] object-center"
+              alt="できるかどうかよりもどうしたらできるかを一緒に考えていきます"
+            />
+          </div>
+        </div>
+        <div id="schedule" class="mt-[30px] flex flex-col gap-[12px] px-[10px]">
+          <div
+            class="mx-auto flex w-full max-w-[500px] items-center justify-center overflow-hidden"
+          >
+            <h4 class="flex w-full flex-col items-center">
+              <img
+                src="/img/ikou_ichinichi.png"
+                class="block w-[120%] max-w-none object-center"
+                alt="１日のスケジュール"
+              />
+            </h4>
+          </div>
+          <dl
+            class="mx-auto grid w-[90%] max-w-[500px] grid-cols-[48px_max-content] justify-center gap-x-[20px] gap-y-[4px] overflow-hidden border-neutral-600 text-16px"
+          >
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">10:00</dt>
+            <dd class="whitespace-nowrap">朝礼・スキルアップ時間</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">11:00</dt>
+            <dd class="whitespace-nowrap">就活準備タイム</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">12:00</dt>
+            <dd class="whitespace-nowrap">昼食</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">13:00</dt>
+            <dd class="whitespace-nowrap">できることを増やす時間</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">14:00</dt>
+            <dd class="whitespace-nowrap">レベルアップ講座</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">15:00</dt>
+            <dd class="whitespace-nowrap">未来準備タイム</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+            <dt class="whitespace-nowrap">16:00</dt>
+            <dd class="whitespace-nowrap">帰宅</dd>
+            <div
+              class="col-span-2 h-px w-[120%] max-w-[none] origin-center scale-y-50 justify-self-center bg-neutral-900"
+            ></div>
+          </dl>
+          <p
+            class="mx-auto grid w-[90%] max-w-[300px] grid-cols-[1rem_1fr] text-12px"
+          >
+            <span>※</span>
+            <span>
+              移行支援は学習時間50分ごとに10分休憩があります。A型の就業時間は10時~16時30分です。10分休憩はありません。
+            </span>
+          </p>
+        </div>
+      </section>
+      <section id="A-type-sien">
+        <div
+          class="mt-[30px] flex flex-col items-center gap-[30px] bg-[url('/img/back_yellow.jpg')] px-[30px] pb-[40px]"
+        >
+          <div
+            class="mx-auto -mt-[20px] flex w-full max-w-[600px] flex-col items-center gap-[10px] overflow-hidden"
+          >
+            <h3 class="flex w-full flex-col items-center">
+              <img
+                src="/img/Agata.png"
+                class="block w-[120%] max-w-none"
+                alt="就労移行支援A型"
+              />
+              <img
+                src="/img/COREKARA.png"
+                class="block w-[120%] max-w-none"
+                alt="COREKARA"
+              />
+            </h3>
+          </div>
+          <div
+            class="mx-auto flex w-full flex-col items-center overflow-hidden"
+          >
+            <img
+              src="/img/koyoukeiyaku.png"
+              class="block w-[120%] max-w-[none] object-center"
+              alt="雇用契約を結びます"
+            />
+          </div>
+          <p class="w-full max-w-[700px] text-justify text-16px">
+            あなたの得意なことや、やってみたいことをお聞かせください。仕事ありきで考えるのではなく、あなたの【得意なこと・身につけたい技術】を大切にします。一人ひとりに合った仕事を、一緒に見つけていきます。
+          </p>
+          <p class="w-full max-w-[700px] text-16px">
+            例えば、こんな仕事<br />
+            <span class="inline-block">2DCAD・</span>
+            <span class="inline-block">WEBサイト制作・</span>
+            <span class="inline-block">コーディング・</span>
+            <span class="inline-block">バナー制作・</span>
+            <span class="inline-block">イラスト・</span>
+            <span class="inline-block">動画編集・</span>
+            <span class="inline-block">チラシ制作など</span>
+          </p>
+          <div class="relative h-auto w-full overflow-hidden">
+            <img
+              src="/img/Agata_img.jpg"
+              alt="A型就労移行支援"
+              class="block h-auto w-full object-cover"
+            />
+            <p
+              class="absolute top-[50%] left-[50%] w-full translate-[-50%] text-center text-24px font-bold text-rose-500"
+            >
+              就労継続支援A型
+            </p>
+          </div>
+
+          <div id="outline" class="mx-auto flex w-full flex-col gap-[12px]">
+            <h4 class="text-center text-base font-bold">OUTLINE</h4>
+            <div class="soft-gradient-border">
+              <div
+                class="soft-gradient-border__content dot-bg-staggered flex flex-col gap-[8px]"
+              >
+                <div class="flex h-auto w-full flex-col sm:flex-row">
+                  <img
+                    src="/img/shigotono.png"
+                    class="block w-full object-contain sm:w-[60%]"
+                  />
+                  <img
+                    src="/img/shigotono_img.png"
+                    class="block w-full object-cover sm:w-[40%]"
+                  />
+                </div>
+                <p class="text-16px text-wrap">
+                  最低時給以上の賃金を貰いながら、<wbr /> 仕事を通して<wbr />
+                  スキルをレベルアップさせて、<wbr />
+                  <span class="whitespace-nowrap">次のステップ（就職）</span
+                  >に<wbr />
+                  つなげる福祉サービスです。
+                </p>
+              </div>
+            </div>
+            <div class="soft-gradient-border">
+              <div
+                class="soft-gradient-border__content dot-bg-staggered flex flex-col gap-[8px]"
+              >
+                <div class="flex h-auto w-full flex-col sm:flex-row">
+                  <img
+                    src="/img/pronoshigoto.png"
+                    class="block w-full object-contain sm:w-[60%]"
+                  />
+                  <img
+                    src="/img/pronoshigoto_img.png"
+                    class="block w-full object-cover sm:w-[40%]"
+                  />
+                </div>
+                <p class="text-16px text-wrap">
+                  休んでしまうと、<wbr /> 納期に遅れが出てしまいます。<wbr />
+                  基本的には、遅刻をしないで<wbr /> 毎日真面目に出勤して<wbr />
+                  勤務できる方に限ります。
+                </p>
+              </div>
+            </div>
+            <div class="soft-gradient-border">
+              <div
+                class="soft-gradient-border__content dot-bg-staggered flex flex-col gap-[8px]"
+              >
+                <div class="flex h-auto w-full flex-col sm:flex-row">
+                  <img
+                    src="/img/support.png"
+                    class="block w-full object-contain sm:w-[60%]"
+                  />
+                  <img
+                    src="/img/support_img.png"
+                    class="block w-full object-cover sm:w-[40%]"
+                  />
+                </div>
+                <p class="text-16px text-wrap">
+                  現役デザイナー、システムエンジニアなど協賛企業がグループにいますので、<wbr />困った時にはいつでも相談できる環境が整っています。
+                </p>
+              </div>
+            </div>
+            <div class="soft-gradient-border">
+              <div
+                class="soft-gradient-border__content dot-bg-staggered flex flex-col gap-[8px]"
+              >
+                <div class="flex h-auto w-full flex-col sm:flex-row">
+                  <img
+                    src="/img/saitekinakeiken.png"
+                    class="block w-full object-contain sm:w-[60%]"
+                  />
+                  <img
+                    src="/img/saitekinakeiken_img.png"
+                    class="block w-full object-cover sm:w-[40%]"
+                  />
+                </div>
+                <p class="text-16px text-wrap">
+                  リアルな企業さまの仕事を受注しての作業で、HP・バナー・イラスト・チラシデザイン作成等。<wbr />スキルを磨け確かな実績を積むことができます。
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-[20px] flex flex-col items-center gap-[8px] text-center"
+            >
+              <p class="text-20px">
+                ｢今の自分に合うかどうか｣は<br />
+                見学でお確かめください
+              </p>
+              <a
+                href="#"
+                class="w-full rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
+                >見学・体験は<wbr />こちら</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="e_learning">
+      <div class="flx w-full flex-col items-center">
+        <div class="flex w-full flex-col items-center overflow-hidden">
+          <h2>
+            <img
+              src="/img/e_learning.png"
+              class="w-hull block h-auto object-cover"
+              alt="e_learningは1365講座"
+            />
+          </h2>
+        </div>
+        <div class="mt-[-2px] flex flex-col items-center">
+          <div
+            class="flex max-w-[700px] flex-col items-center bg-[#72CC99] p-[24px]"
+          >
+            <p class="text-16px text-white">
+              理解度に合わせて、繰り返し学習したり、学びたい講座から進めるのも自由です。
+              また、場所や時間を選ばないので自分のペースで学習できます。
+              ご希望の方には、ご相談のうえ、パソコンの貸し出しもいたしますので、ご自宅での学習も可能です。
+            </p>
+          </div>
+          <div
+            class="mt-[-1px] h-0 w-0 border-x-[60px] border-t-[32px] border-x-transparent border-t-[#72CC99]"
+          ></div>
+        </div>
+
+        <div
+          class="mt-[-32px] flex w-full flex-col items-center bg-gradient-to-b from-[#F5FEDF] to-[#A5D3E8] pt-[60px] pb-[30px]"
+        >
+          <div
+            class="flex w-[80%] max-w-[700px] flex-col items-center gap-[24px]"
+          >
+            <h3
+              class="w-full rounded-4xl bg-[#72CC99] px-[12px] py-[2px] text-center text-20px font-bold text-white"
+            >
+              eラーニング1365講座
+            </h3>
+            <dl class="grid w-full grid-cols-[70%_25%] gap-x-[8px] text-base">
+              <dt>MOS対策（Excel・Word・PowerPoint）</dt>
+              <dd>197講座</dd>
+              <dt>CapCut</dt>
+              <dd>23講座</dd>
+              <dt>Premier Pro</dt>
+              <dd>19講座</dd>
+              <dt>ゆっくりムービーメーカー</dt>
+              <dd>1講座</dd>
+              <dt>マーケティング講座</dt>
+              <dd>34講座</dd>
+              <dt>広告（Meta・Google）</dt>
+              <dd>70講座</dd>
+              <dt>ChatGPT入門</dt>
+              <dd>81講座</dd>
+              <dt>SNS登録から運用</dt>
+              <dd>107講座</dd>
+              <dt>デザイン（基礎・Illustrator・Photoshop）</dt>
+              <dd>33講座</dd>
+              <dt>Canva</dt>
+              <dd>109講座</dd>
+              <dt>Webデザイン実践コース</dt>
+              <dd>58講座</dd>
+              <dt>Webデザイン</dt>
+              <dd>147講座</dd>
+              <dt>プログラミング</dt>
+              <dd>66講座</dd>
+              <dt>HTML入門</dt>
+              <dd>41講座</dd>
+              <dt>CSS</dt>
+              <dd>55講座</dd>
+              <dt>JAVA入門</dt>
+              <dd>59講座</dd>
+              <dt>PHP入門</dt>
+              <dd>45講座</dd>
+              <dt>JavaScript入門</dt>
+              <dd>56講座</dd>
+              <dt>Python入門編1＆2</dt>
+              <dd>48講座</dd>
+              <dt>C#入門</dt>
+              <dd></dd>
+            </dl>
+            <div
+              class="mt-[20px] flex flex-col items-center gap-[8px] text-center"
+            >
+              <p class="text-20px">見学・体験を<wbr />とりあえず予約してみる</p>
+              <a
+                href="#"
+                class="w-full rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
+                >見学・体験は<wbr />こちら</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section id="syusyokuritu" class="flex w-full flex-col">
+      <div class="flex flex-col items-center gap-[12px]">
+        <div
+          class="flex w-full flex-col bg-[url('/img/back_1.jpg')] bg-contain"
+        >
+          <h2
+            class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center"
+          >
+            <span class="py-[2px] text-base font-bold">DATA</span>
+            <span class="py-[2px] text-32px font-extrabold text-[#046CB4]"
+              >実績に裏付けられた<br /><span
+                class="text-outline text-48px [--text-inner-fill:#FCCF00] [--text-outline-stroke:#046CB4]"
+                >就職率</span
+              ></span
+            >
+          </h2>
+        </div>
+        <p class="w-[90%] max-w-[700px]">
+          COREKARAでは、2024年の開所以来、利用者の方が「自分らしく働く」
+          ことを大切に支援を行ってきました。<wbr />その結果、利用開始から2年以内に
+          就職された方の就職率は100％となっています。就職先は事務職を中心に、
+          IT、福祉サービス、製造業などさまざまです。<wbr />
+          利用者の希望や特性に応じた就職を実現しています
+        </p>
+      </div>
+      <div
+        class="flex w-full flex-col items-center gap-[24px] bg-[url('/img/back_2.png')] bg-[length:100%_auto] bg-top bg-repeat-y py-[30px]"
+      >
+        <img
+          src="/img/100％.png"
+          alt="就職率100%"
+          class="block object-contain"
+        />
+        <ul
+          class="mx-auto w-fit max-w-full px-[8px] text-[clamp(18px,5.6vw,42px)] leading-tight font-bold"
+        >
+          <li class="grid grid-cols-[1em_1fr] gap-x-[4px]">
+            <span>・</span>
+            <span>1年以上の利用者様 就職率100%</span>
+          </li>
+          <li class="grid grid-cols-[1em_1fr] gap-x-[4px]">
+            <span>・</span>
+            <span>6か月以上、1年未満 就職率 66%</span>
+          </li>
+        </ul>
+        <h3 class="block text-20px font-bold">就職先職種</h3>
+        <img
+          src="/img/graph.png"
+          alt="graph"
+          class="w-full max-w-[600px] object-contain"
+        />
+      </div>
+    </section>
+    <section id="voices" class="flex flex-col items-center">
+      <div
+        class="flex w-full flex-col gap-[20px] bg-[url('/img/back_pink.jpg')] px-[12px] py-[30px]"
+      >
+        <h2
+          class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center"
+        >
+          <span class="py-[2px] text-base text-16px font-bold">VOICES</span>
+          <img src="/img/voice.png" class="object-contain" />
+        </h2>
+        <p class="w-full">↓質問をクリックすると回答を読むことができます。</p>
+        <div
+          class="flex w-full max-w-[750px] flex-col items-center gap-[20px] px-[12px]"
+        >
+          <details>
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-[16px] rounded-[12px] bg-[#7BB9EC] px-[20px] py-[12px] text-white"
+            >
+              <span class="text-[18px] font-bold">
+                Q.通う前はどんな気持ちでしたか?
+              </span>
+              <span class="shrink-0 text-[24px] leading-none font-bold">
+                <span class="block group-open:hidden">+</span>
+                <span class="hidden group-open:block">−</span>
+              </span>
+            </summary>
+            <div class="flex flex-col gap-[20px] py-[20px]">
+              <div class="flex gap-[16px]">
+                <div
+                  class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                >
+                  <div class="shrink-0">
+                    <img
+                      src="/img/voice_01.png"
+                      alt="30代男性 精神障害"
+                      class="block h-auto w-full"
+                    />
+                  </div>
+                  <p>30代男性<br />精神障害</p>
+                </div>
+                <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                  <p class="text-16px">
+                    仕事を適応障害と鬱と診断されて退職し、実家に戻って1年以上、何もできないような状態でした。
+                    同じ時期に発達障害の診断も受け、薬を服用し始めました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <div
       id="viewport-check"
       style="

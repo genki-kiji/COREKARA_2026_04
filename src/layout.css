@@ -1,3 +1,69 @@
 /* layout.css */
 @layer components {
+  .text-outline {
+    --text-outline-stroke: #f9779e;
+    --text-inner-fill: white;
+
+    -webkit-text-stroke: 8px var(--text-outline-stroke);
+    -webkit-text-fill-color: var(--text-inner-fill);
+    paint-order: stroke;
+  }
+  .dot-bg-staggered {
+    background-image:
+      radial-gradient(circle, #d9f99d 2px, transparent 2px),
+      radial-gradient(circle, #d9f99d 2px, transparent 2px);
+    background-size: 20px 20px;
+    background-position:
+      0 0,
+      10px 10px;
+    background-repeat: repeat;
+  }
+
+  .io-border {
+    --io-border-width: 12px;
+    --io-border-radius: 16px;
+
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    border-radius: var(--io-border-radius);
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .io-border__canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .io-border__content {
+    position: relative;
+    z-index: 2;
+    margin: var(--io-border-width);
+    border-radius: calc(var(--io-border-radius) - var(--io-border-width));
+  }
+  .soft-gradient-border {
+    --soft-border-radius: 16px;
+    --soft-border-space: 18px;
+
+    padding: var(--soft-border-space);
+  }
+
+  .soft-gradient-border__content {
+    border-radius: var(--soft-border-radius);
+    background-color: white;
+    padding: 24px;
+
+    box-shadow:
+      0 0 3px 2px #ef4444,
+      0 0 4px 4px #f87171,
+      0 0 5px 6px #fca5a5,
+      0 0 6px 8px #fecaca,
+      0 0 7px 10px #fee2e2,
+      0 0 8px 12px #ffffff;
+  }
 }
