@@ -2,17 +2,45 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="茨城県土浦市の就労支援施設COREKARA。就労移行支援・就労継続支援A型を通して、一人ひとりに合わせた支援を行っています。見学・体験受付中。"
+    />
+    <link rel="canonical" href="https://corekara.jp/" />
+    <meta name="theme-color" content="#8DC21F" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="就労支援施設 COREKARA" />
+
+    <meta
+      property="og:description"
+      content="茨城県土浦市の就労支援施設COREKARA。"
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://corekara.jp/" />
+
+    <meta
+      property="og:image"
+      content="https://corekara.jp/img/COREKARA_logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image:width" content="630" />
+    <!--1200*630の画像を用意してもらうこと-->
+    <meta property="og:image:height" content="630" />
+
+    <!--fontなどlink-->
     <link rel="icon" href="/img/COREKARA_logo.jpg" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="/src/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project1-1</title>
+    <title>茨城県土浦市の就労支援施設 COREKARA</title>
   </head>
   <body>
     <section id="top" class="flex w-full flex-col">
@@ -29,13 +57,17 @@
           一緒に自由に<wbr />踏み出そう
         </p>
       </div>
-      <div class="relative flex h-auto w-full">
+      <div class="relative flex h-auto w-full flex-col">
         <img
           src="/img/top.jpg"
           class="block h-auto w-full object-cover"
+          fetchpriority="high"
+          decoding="async"
           alt="これからを一緒に見つける就労支援です"
         />
-        <div class="absolute bottom-[5%] left-1/2 w-[90%] translate-x-[-50%]">
+        <div
+          class="absolute bottom-[5%] left-1/2 flex w-[90%] translate-x-[-50%] flex-col items-center"
+        >
           <p
             class="flex w-full justify-center py-[5px] text-center text-16px font-bold text-[#4D4B4E]"
           >
@@ -43,7 +75,7 @@
           </p>
           <a
             href="tel:0298288930"
-            class="flex w-full justify-center rounded-2xl bg-[#EE94AE] py-[5px] text-center text-16px font-bold text-white"
+            class="flex w-full max-w-[400px] justify-center rounded-2xl bg-[#EE94AE] py-[5px] text-center text-16px font-bold text-white"
           >
             まずは、お話だけでも構いません。
           </a>
@@ -74,6 +106,7 @@
         <img
           src="/img/kangaekata.jpg"
           class="block h-full w-full object-cover object-center"
+          loading="lazy"
           alt="priorities"
         />
         <div class="absolute top-[10%] left-1/2 flex translate-[-50%]">
@@ -85,7 +118,7 @@
         <div
           class="absolute top-[18%] bottom-[55%] left-[5%] flex w-[50%] flex-col justify-center break-keep"
         >
-          <p class="text-20px font-bold text-white">無理に急がせません</p>
+          <p class="text-20px font-bold text-white">無理に<br>急がせません</p>
           <p class="text-14px">
             あなたのペースを大切に。焦らなくていいから<wbr />自分のペースで！
           </p>
@@ -114,9 +147,14 @@
       <div class="mt-[30px] flex w-full flex-col">
         <h2 class="mx-auto flex flex-col text-center">
           <span class="text-base font-bold">service</span>
-          <span class="text-24px font-extrabold">2つのサービスをご提供</span>
+          <span class="text-24px font-bold">2つのサービスをご提供</span>
         </h2>
-        <img src="/img/service.png" class="block object-cover" />
+        <img
+          src="/img/service.png"
+          class="block object-cover"
+          loading="lazy"
+          alt="就労移行とA型"
+        />
       </div>
       <section id="ikousien">
         <div
@@ -129,11 +167,13 @@
               <img
                 src="/img/ikou.png"
                 class="block w-[120%] max-w-none"
+                loading="lazy"
                 alt="就労移行支援"
               />
               <img
                 src="/img/COREKARA.png"
                 class="block w-[120%] max-w-none"
+                loading="lazy"
                 alt="COREKARA"
               />
             </h3>
@@ -148,11 +188,13 @@
               <img
                 src="/img/ippan.png"
                 alt="一般企業で働きたい方には"
+                loading="lazy"
                 class="block w-[140%] max-w-none"
               />
             </h4>
             <img
               src="/img/ippan_img.jpg"
+              loading="lazy"
               alt="一般企業で働くイメージ"
               class="block"
             />
@@ -166,12 +208,14 @@
             <h4 class="flex w-full flex-col items-center">
               <img
                 src="/img/jimu.png"
+                loading="lazy"
                 alt="事務系で働きたい方には"
                 class="block w-[140%] max-w-none"
               />
             </h4>
             <img
               src="/img/jimu_img.jpg"
+              loading="lazy"
               alt="事務系で働くイメージ"
               class="block"
             />
@@ -185,11 +229,17 @@
             <h4 class="flex w-full flex-col items-center">
               <img
                 src="/img/IT.png"
+                loading="lazy"
                 alt="IT業界で働きたい方には"
                 class="block w-[140%] max-w-none"
               />
             </h4>
-            <img src="/img/IT_img.jpg" alt="ITで働くイメージ" class="block" />
+            <img
+              src="/img/IT_img.jpg"
+              loading="lazy"
+              alt="ITで働くイメージ"
+              class="block"
+            />
             <p class="text-base text-yellow-700">
               個別に進めるため、グラフィックやWeb、動画編集に加え、独学では難しいプログラミングやWeb言語も無理なく学んでいけます。
               実際のクライアント案件を教材にすることで、広告業界のリアルな仕事の流れを体験できます。
@@ -215,6 +265,7 @@
           >
             <img
               src="/img/dekirukadouka.png"
+              loading="lazy"
               class="mb-[30px] block w-[120%] max-w-[none] object-center"
               alt="できるかどうかよりもどうしたらできるかを一緒に考えていきます"
             />
@@ -227,6 +278,7 @@
             <h4 class="flex w-full flex-col items-center">
               <img
                 src="/img/ikou_ichinichi.png"
+                loading="lazy"
                 class="block w-[120%] max-w-none object-center"
                 alt="１日のスケジュール"
               />
@@ -294,21 +346,24 @@
             <h3 class="flex w-full flex-col items-center">
               <img
                 src="/img/Agata.png"
+                loading="lazy"
                 class="block w-[120%] max-w-none"
                 alt="就労移行支援A型"
               />
               <img
                 src="/img/COREKARA.png"
+                loading="lazy"
                 class="block w-[120%] max-w-none"
                 alt="COREKARA"
               />
             </h3>
           </div>
           <div
-            class="mx-auto flex w-full flex-col items-center overflow-hidden"
+            class="mx-auto flex w-full max-w-[700px] flex-col items-center overflow-hidden"
           >
             <img
               src="/img/koyoukeiyaku.png"
+              loading="lazy"
               class="block w-[120%] max-w-[none] object-center"
               alt="雇用契約を結びます"
             />
@@ -326,9 +381,10 @@
             <span class="inline-block">動画編集・</span>
             <span class="inline-block">チラシ制作など</span>
           </p>
-          <div class="relative h-auto w-full overflow-hidden">
+          <div class="relative h-auto w-full max-w-[700px] overflow-hidden">
             <img
               src="/img/Agata_img.jpg"
+              loading="lazy"
               alt="A型就労移行支援"
               class="block h-auto w-full object-cover"
             />
@@ -339,7 +395,10 @@
             </p>
           </div>
 
-          <div id="outline" class="mx-auto flex w-full flex-col gap-[12px]">
+          <div
+            id="outline"
+            class="mx-auto flex w-full max-w-[700px] flex-col gap-[12px]"
+          >
             <h4 class="text-center text-base font-bold">OUTLINE</h4>
             <div class="soft-gradient-border">
               <div
@@ -348,10 +407,12 @@
                 <div class="flex h-auto w-full flex-col sm:flex-row">
                   <img
                     src="/img/shigotono.png"
+                    loading="lazy"
                     class="block w-full object-contain sm:w-[60%]"
                   />
                   <img
                     src="/img/shigotono_img.png"
+                    loading="lazy"
                     class="block w-full object-cover sm:w-[40%]"
                   />
                 </div>
@@ -371,10 +432,12 @@
                 <div class="flex h-auto w-full flex-col sm:flex-row">
                   <img
                     src="/img/pronoshigoto.png"
+                    loading="lazy"
                     class="block w-full object-contain sm:w-[60%]"
                   />
                   <img
                     src="/img/pronoshigoto_img.png"
+                    loading="lazy"
                     class="block w-full object-cover sm:w-[40%]"
                   />
                 </div>
@@ -392,10 +455,12 @@
                 <div class="flex h-auto w-full flex-col sm:flex-row">
                   <img
                     src="/img/support.png"
+                    loading="lazy"
                     class="block w-full object-contain sm:w-[60%]"
                   />
                   <img
                     src="/img/support_img.png"
+                    loading="lazy"
                     class="block w-full object-cover sm:w-[40%]"
                   />
                 </div>
@@ -411,10 +476,12 @@
                 <div class="flex h-auto w-full flex-col sm:flex-row">
                   <img
                     src="/img/saitekinakeiken.png"
+                    loading="lazy"
                     class="block w-full object-contain sm:w-[60%]"
                   />
                   <img
                     src="/img/saitekinakeiken_img.png"
+                    loading="lazy"
                     class="block w-full object-cover sm:w-[40%]"
                   />
                 </div>
@@ -432,7 +499,7 @@
               </p>
               <a
                 href="tel:0298288930"
-                class="w-full rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
+                class="w-full max-w-[400px] rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
                 >見学・体験は<wbr />こちら</a
               >
             </div>
@@ -443,19 +510,18 @@
     <section id="e_learning">
       <div class="flex w-full flex-col items-center">
         <div class="flex w-full flex-col items-center overflow-hidden">
-          <h2>
+          <h class="w-full">
             <img
               src="/img/e_learning.png"
+              loading="lazy"
               class="block h-auto w-full object-cover"
               alt="e_learningは1365講座"
             />
           </h2>
         </div>
-        <div class="mt-[-2px] flex flex-col items-center">
-          <div
-            class="flex max-w-[700px] flex-col items-center bg-[#72CC99] p-[24px]"
-          >
-            <p class="text-16px text-white">
+        <div class="mt-[-2px] flex w-full flex-col items-center">
+          <div class="flex w-full flex-col items-center bg-[#72CC99] p-[24px]">
+            <p class="w-full max-w-[750px] px-[24px] text-16px text-white">
               理解度に合わせて、繰り返し学習したり、学びたい講座から進めるのも自由です。
               また、場所や時間を選ばないので自分のペースで学習できます。
               ご希望の方には、ご相談のうえ、パソコンの貸し出しもいたしますので、ご自宅での学習も可能です。
@@ -525,7 +591,7 @@
               <p class="text-20px">見学・体験を<wbr />とりあえず予約してみる</p>
               <a
                 href="tel:0298288930"
-                class="w-full rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
+                class="w-full max-w-[400px] rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
                 >見学・体験は<wbr />こちら</a
               >
             </div>
@@ -533,13 +599,13 @@
         </div>
       </div>
     </section>
-    <section id="syusyokuritu" class="flex w-full flex-col">
-      <div class="flex flex-col items-center gap-[12px]">
+    <section id="syusyokuritu" class="flex w-full flex-col items-center">
+      <div class="flex flex-col w-full items-center gap-[12px]">
         <div
-          class="flex w-full flex-col bg-[url('/img/back_1.jpg')] bg-contain"
+          class="flex w-full flex-col bg-[url('/img/back_1.jpg')] bg-cover bg-center"
         >
           <h2
-            class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center"
+            class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center "
           >
             <span class="py-[2px] text-base font-bold">DATA</span>
             <span class="py-[2px] text-32px font-extrabold text-[#046CB4]"
@@ -550,7 +616,7 @@
             >
           </h2>
         </div>
-        <p class="w-[90%] max-w-[700px]">
+        <p class="w-[90%] max-w-[700px] text-16px">
           COREKARAでは、2024年の開所以来、利用者の方が「自分らしく働く」
           ことを大切に支援を行ってきました。<wbr />その結果、利用開始から2年以内に
           就職された方の就職率は100％となっています。就職先は事務職を中心に、
@@ -561,8 +627,10 @@
       <div
         class="flex w-full flex-col items-center gap-[24px] bg-[url('/img/back_2.png')] bg-[length:100%_auto] bg-top bg-repeat-y py-[30px]"
       >
+      <div class="flex flex-col w-full max-w-[700px]">
         <img
           src="/img/100％.png"
+          loading="lazy"
           alt="就職率100%"
           class="block object-contain"
         />
@@ -581,22 +649,24 @@
         <h3 class="block text-20px font-bold">就職先職種</h3>
         <img
           src="/img/graph.png"
+          loading="lazy"
           alt="graph"
           class="w-full max-w-[600px] object-contain"
         />
+        </div>
       </div>
     </section>
     <section id="voices" class="flex flex-col items-center">
       <div
-        class="flex w-full flex-col gap-[20px] bg-[url('/img/back_pink.jpg')] px-[12px] py-[30px]"
+        class="flex w-full flex-col items-center gap-[20px] bg-[url('/img/back_pink.jpg')] px-[12px] py-[30px]"
       >
         <h2
           class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center"
         >
           <span class="py-[2px] text-base text-16px font-bold">VOICES</span>
-          <img src="/img/voice.png" class="object-contain" />
+          <img src="/img/voice.png" loading="lazy" class="object-contain" />
         </h2>
-        <p class="w-full">↓質問をクリックすると回答を読むことができます。</p>
+        <p class="w-full text-center text-16px">↓質問をクリックすると回答を読むことができます。</p>
         <details
           class="flex w-full max-w-[750px] flex-col items-center gap-[20px] px-[12px]"
         >
@@ -615,18 +685,21 @@
           <div class="flex w-full flex-col gap-[20px] py-[20px]">
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_01.png"
+                    loading="lazy"
                     alt="30代男性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">30代男性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   仕事を適応障害と鬱と診断されて退職し、実家に戻って1年以上、何もできないような状態でした。
                   同じ時期に発達障害の診断も受け、薬を服用し始めました。
@@ -636,18 +709,21 @@
 
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_02.png"
+                    loading="lazy"
                     alt="20代男性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">20代男性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   勉強してスキルが身につくか、どのくらいの時間で納得のいく技術を身につけられるかなどが一番気になった。勉強を楽しんで出来るか、集中してできるのか、なども気になった。
                 </p>
@@ -655,18 +731,21 @@
             </div>
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_03.png"
+                    loading="lazy"
                     alt="20代女性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">20代女性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   以前は人と会って話すと心臓がバクバクして、これからどうやって生きていけばいいのか分からなくて毎日不安でした。自分自身過去のトラウマから逃げて立ち向かうことができなくなっていたので、何か始めても苦しくなったら辞めて継続困難な状況でした。だから、諦めないで通い続けることを目標にして支えてくれるならと期待していました。
                 </p>
@@ -674,18 +753,21 @@
             </div>
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_04.png"
+                    loading="lazy"
                     alt="40代女性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">40代女性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   やらなければならないことを目の前にすると、思考停止して体もつきかねなくなってしまい、買い物も一人ではなかなか行けず、ほとんどのような生活でした。たまに外に出ても、他人の視線が怖くずっと下を向いて歩いていました。生活も不規則で、少しのことで涙がでてくるような状態でした
                 </p>
@@ -712,18 +794,21 @@
           <div class="flex w-full flex-col gap-[20px] py-[20px]">
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_01.png"
+                    loading="lazy"
                     alt="30代男性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">30代男性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   毎日通所をすることで、生活習慣が一般の社会人と近い形態になる為、家にいて何もできない状態から考えるとその変化が大きな一歩だったと思います。学習内容に関しても、設備や書籍、その他のサポートが揃っており安心して取り組むことができています。
                 </p>
@@ -732,18 +817,21 @@
 
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_02.png"
+                    loading="lazy"
                     alt="20代男性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">20代男性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   とても良い環境で集中して勉強に励むことが出来て安心した。勉強も楽しく日に日に技術や操作方法も覚え充実感がある。また体調が安定しなくて休んだり、遅刻してしまう時があるが、改善していきたい。
                 </p>
@@ -751,18 +839,21 @@
             </div>
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_03.png"
+                    loading="lazy"
                     alt="20代女性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">20代女性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   色々な経験をした方々の話を聞いて視野が広がりました。朝、昼、夜3食食べるようになりました。人と話すのが楽しくなり、安心できる場所へとなっていきました。資格取得して自信になり、次のステップへと目標設定し、学習計画を立てるようになった。
                 </p>
@@ -770,18 +861,21 @@
             </div>
             <div class="flex gap-[16px]">
               <div
-                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
               >
                 <div class="shrink-0">
                   <img
                     src="/img/voice_04.png"
+                    loading="lazy"
                     alt="40代女性 精神障害"
                     class="block h-auto w-full"
                   />
                 </div>
                 <p class="text-16px">40代女性<br />精神障害</p>
               </div>
-              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+              <div
+                class="flex min-w-0 flex-1 items-center rounded-xl bg-white p-[16px] shadow"
+              >
                 <p class="text-16px break-all">
                   まず在宅で始め、毎日決まった時間に決まったことをやるという習慣がつき、そのうち通所ができるようになり、外に出る習慣も身に付きました。支援員の方たちのおかげで人との会話にも慣れ、通所している間は嫌なことも忘れられ、やらなければいけないことにもすこしずつですが取り組めるようになってきました。就職へ向けての不安が大きかったのですが、資格も取ることができ、前向きになれています。
                 </p>
@@ -792,18 +886,19 @@
       </div>
     </section>
     <section id="information" class="mt-[30px] flex flex-col items-center">
-      <div class="flex flex-col items-center gap-[12px]">
+      <div class="flex w-full flex-col items-center gap-[12px]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5913.792274945217!2d140.19680968550983!3d36.08085479838229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602213da665e5c1d%3A0xcd51d476407c64ca!2z5bCx5Yq05pSv5o-05pa96KitIENPUkVLQVJB77yI5bCx5Yq056e76KGM5pSv5o-044CB5bCx5Yq057aZ57aa5pSv5o-0QeWei--8iQ!5e0!3m2!1sja!2sjp!4v1778208031122!5m2!1sja!2sjp"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          class="h-[50vh] w-full max-w-[700px]"
+          class="h-[50vh] w-full"
         ></iframe>
         <h2 class="flex flex-col items-center">
           <img
             src="/img/COREKARA_logo.png"
+            loading="lazy"
             alt="就労支援施設COREKARA"
             class="mt-[30px] w-[50%] max-w-[600px] min-w-[200px]"
           />
