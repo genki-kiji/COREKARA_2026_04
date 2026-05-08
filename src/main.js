@@ -1,8 +1,3 @@
-import "./style.css";
-import { setupInnerOuterGradientBorders } from "./ioGradientBorder.js";
-
-setupInnerOuterGradientBorders();
-
 /*
 import './style.css'
 import javascriptLogo from './assets/javascript.svg'
