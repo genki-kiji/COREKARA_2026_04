@@ -3,6 +3,7 @@
   *::before,
   *::after {
     box-sizing: border-box;
+    min-width: 0;
     font-family: "Noto Sans JP", sans-serif;
   }
   p {

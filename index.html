@@ -17,17 +17,12 @@
   <body>
     <section id="top" class="flex w-full flex-col">
       <div class="flex w-full">
-        <a
-          href="#"
-          class="flex w-1/2 items-center justify-center bg-neutral-800 text-center"
+        <h1
+          class="flex w-1/2 flex-col items-center justify-center bg-neutral-800 text-center"
         >
-          <h1>
-            <span class="text-20px font-bold text-white">就労支援施設</span
-            ><br /><span class="text-20px font-bold text-[#FDECBE]"
-              >COREKARA</span
-            >
-          </h1>
-        </a>
+          <span class="text-20px font-bold text-white">就労支援施設</span
+          ><span class="text-20px font-bold text-[#FDECBE]">COREKARA</span>
+        </h1>
         <p
           class="flex w-1/2 items-center justify-center bg-[#0071BD] text-center text-20px break-keep text-white"
         >
@@ -46,11 +41,12 @@
           >
             見学・体験はいつでも可能です。
           </p>
-          <p
+          <a
+            href="tel:0298288930"
             class="flex w-full justify-center rounded-2xl bg-[#EE94AE] py-[5px] text-center text-16px font-bold text-white"
           >
             まずは、お話だけでも構いません。
-          </p>
+          </a>
         </div>
       </div>
     </section>
@@ -435,7 +431,7 @@
                 見学でお確かめください
               </p>
               <a
-                href="#"
+                href="tel:0298288930"
                 class="w-full rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
                 >見学・体験は<wbr />こちら</a
               >
@@ -528,7 +524,7 @@
             >
               <p class="text-20px">見学・体験を<wbr />とりあえず予約してみる</p>
               <a
-                href="#"
+                href="tel:0298288930"
                 class="w-full rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
                 >見学・体験は<wbr />こちら</a
               >
@@ -601,64 +597,250 @@
           <img src="/img/voice.png" class="object-contain" />
         </h2>
         <p class="w-full">↓質問をクリックすると回答を読むことができます。</p>
-        <div
+        <details
           class="flex w-full max-w-[750px] flex-col items-center gap-[20px] px-[12px]"
         >
-          <details>
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between gap-[16px] rounded-[12px] bg-[#7BB9EC] px-[20px] py-[12px] text-white"
-            >
-              <span class="text-[18px] font-bold">
-                Q.通う前はどんな気持ちでしたか?
-              </span>
-              <span class="shrink-0 text-[24px] leading-none font-bold">
-                <span class="block group-open:hidden">+</span>
-                <span class="hidden group-open:block">−</span>
-              </span>
-            </summary>
-            <div class="flex flex-col gap-[20px] py-[20px]">
-              <div class="flex gap-[16px]">
-                <div
-                  class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
-                >
-                  <div class="shrink-0">
-                    <img
-                      src="/img/voice_01.png"
-                      alt="30代男性 精神障害"
-                      class="block h-auto w-full"
-                    />
-                  </div>
-                  <p>30代男性<br />精神障害</p>
+          <summary
+            class="flex w-full cursor-pointer list-none items-center justify-between gap-[16px] rounded-[12px] bg-[#7BB9EC] px-[20px] py-[12px] text-white"
+          >
+            <span class="flex gap-2 text-16px font-bold break-keep">
+              <span>Q.</span>
+              <span>通う前は<wbr />どんな気持ちでしたか?</span>
+            </span>
+            <span class="shrink-0 text-[24px] leading-none font-bold">
+              <span class="block group-open:hidden">+</span>
+              <span class="hidden group-open:block">−</span>
+            </span>
+          </summary>
+          <div class="flex w-full flex-col gap-[20px] py-[20px]">
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_01.png"
+                    alt="30代男性 精神障害"
+                    class="block h-auto w-full"
+                  />
                 </div>
-                <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
-                  <p class="text-16px">
-                    仕事を適応障害と鬱と診断されて退職し、実家に戻って1年以上、何もできないような状態でした。
-                    同じ時期に発達障害の診断も受け、薬を服用し始めました。
-                  </p>
-                </div>
+                <p class="text-16px">30代男性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  仕事を適応障害と鬱と診断されて退職し、実家に戻って1年以上、何もできないような状態でした。
+                  同じ時期に発達障害の診断も受け、薬を服用し始めました。
+                </p>
               </div>
             </div>
-          </details>
+
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_02.png"
+                    alt="20代男性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">20代男性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  勉強してスキルが身につくか、どのくらいの時間で納得のいく技術を身につけられるかなどが一番気になった。勉強を楽しんで出来るか、集中してできるのか、なども気になった。
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_03.png"
+                    alt="20代女性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">20代女性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  以前は人と会って話すと心臓がバクバクして、これからどうやって生きていけばいいのか分からなくて毎日不安でした。自分自身過去のトラウマから逃げて立ち向かうことができなくなっていたので、何か始めても苦しくなったら辞めて継続困難な状況でした。だから、諦めないで通い続けることを目標にして支えてくれるならと期待していました。
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_04.png"
+                    alt="40代女性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">40代女性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  やらなければならないことを目の前にすると、思考停止して体もつきかねなくなってしまい、買い物も一人ではなかなか行けず、ほとんどのような生活でした。たまに外に出ても、他人の視線が怖くずっと下を向いて歩いていました。生活も不規則で、少しのことで涙がでてくるような状態でした
+                </p>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details
+          class="flex w-full max-w-[750px] flex-col items-center gap-[20px] px-[12px]"
+        >
+          <summary
+            class="flex w-full cursor-pointer list-none items-center justify-between gap-[16px] rounded-[12px] bg-[#7BB9EC] px-[20px] py-[12px] text-white"
+          >
+            <span class="flex gap-2 text-16px font-bold break-keep">
+              <span>Q.</span>
+              <span>通い始めて何か変化は<wbr />ありましたか？</span>
+            </span>
+            <span class="shrink-0 text-[24px] leading-none font-bold">
+              <span class="block group-open:hidden">+</span>
+              <span class="hidden group-open:block">−</span>
+            </span>
+          </summary>
+          <div class="flex w-full flex-col gap-[20px] py-[20px]">
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_01.png"
+                    alt="30代男性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">30代男性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  毎日通所をすることで、生活習慣が一般の社会人と近い形態になる為、家にいて何もできない状態から考えるとその変化が大きな一歩だったと思います。学習内容に関しても、設備や書籍、その他のサポートが揃っており安心して取り組むことができています。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_02.png"
+                    alt="20代男性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">20代男性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  とても良い環境で集中して勉強に励むことが出来て安心した。勉強も楽しく日に日に技術や操作方法も覚え充実感がある。また体調が安定しなくて休んだり、遅刻してしまう時があるが、改善していきたい。
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_03.png"
+                    alt="20代女性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">20代女性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  色々な経験をした方々の話を聞いて視野が広がりました。朝、昼、夜3食食べるようになりました。人と話すのが楽しくなり、安心できる場所へとなっていきました。資格取得して自信になり、次のステップへと目標設定し、学習計画を立てるようになった。
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[16px]">
+              <div
+                class="flex w-[22%] flex-col items-center justify-center gap-[12px]"
+              >
+                <div class="shrink-0">
+                  <img
+                    src="/img/voice_04.png"
+                    alt="40代女性 精神障害"
+                    class="block h-auto w-full"
+                  />
+                </div>
+                <p class="text-16px">40代女性<br />精神障害</p>
+              </div>
+              <div class="min-w-0 flex-1 rounded-xl bg-white p-[16px] shadow">
+                <p class="text-16px break-all">
+                  まず在宅で始め、毎日決まった時間に決まったことをやるという習慣がつき、そのうち通所ができるようになり、外に出る習慣も身に付きました。支援員の方たちのおかげで人との会話にも慣れ、通所している間は嫌なことも忘れられ、やらなければいけないことにもすこしずつですが取り組めるようになってきました。就職へ向けての不安が大きかったのですが、資格も取ることができ、前向きになれています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+    <section id="infomertion" class="mt-[30px] flex flex-col items-center">
+      <div class="flex flex-col items-center gap-[12px]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5913.792274945217!2d140.19680968550983!3d36.08085479838229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602213da665e5c1d%3A0xcd51d476407c64ca!2z5bCx5Yq05pSv5o-05pa96KitIENPUkVLQVJB77yI5bCx5Yq056e76KGM5pSv5o-044CB5bCx5Yq057aZ57aa5pSv5o-0QeWei--8iQ!5e0!3m2!1sja!2sjp!4v1778208031122!5m2!1sja!2sjp"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="h-[50vh] w-full max-w-[700px]"
+        ></iframe>
+        <h2 class="flex flex-col items-center">
+          <img
+            src="/img/COREKARA_logo.png"
+            alt="就労支援施設COREKARA"
+            class="mt-[30px] w-[50%] max-w-[600px] min-w-[200px]"
+          />
+          <p
+            class="w-[50%] max-w-[600px] min-w-[200px] text-center text-16px break-keep"
+          >
+            就労移行支援・<wbr />就労継続支援A型
+          </p>
+        </h2>
+        <div
+          id="address"
+          class="flex w-full flex-col items-center gap-[8px] text-center text-base"
+        >
+          <p class="break-normal">
+            <span class="whitespace-nowrap">〒300-0033 茨城県土浦市川口</span
+            ><wbr /><span class="whitespace-nowrap"
+              >1-1-26 アーバンスクエア土浦602</span
+            >
+          </p>
+          <p>営業時間：10時〜18時</p>
+          <p>Phone：(029) 828-8930</p>
+          <p>Email：info@supportcreation.com</p>
         </div>
       </div>
     </section>
-
-    <div
-      id="viewport-check"
-      style="
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        z-index: 9999;
-        background: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        padding: 8px;
-        font-size: 14px;
-      "
-    ></div>
-    <script>
-      document.getElementById("viewport-check").textContent =
-        `innerWidth: ${window.innerWidth}px / DPR: ${window.devicePixelRatio}`;
-    </script>
+    <footer class="mt-[30px] flex w-full flex-col items-center">
+      <p class="text-12px">Copyright 2026 - COREKARA</p>
+      <div class="flex w-full text-center text-16px text-white">
+        <a class="w-1/2 bg-[#72CC99] py-[8px]" href="tel:0298288930"
+          >電話で相談する</a
+        >
+        <a
+          class="w-1/2 bg-[#EE94AE] py-[8px]"
+          href="mailto:info@supportcreation.com?subject=お問い合わせ"
+          >見学・体験はこちら</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
