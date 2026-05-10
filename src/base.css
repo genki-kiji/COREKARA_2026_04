@@ -7,9 +7,38 @@
     font-family: "Noto Sans JP", sans-serif;
   }
   p {
-    text-wrap: balance;
+    /* 日本語の改行品質 */
     line-break: strict;
-    word-break: auto-phrase;
-    @apply leading-relaxed;
+    word-break: normal;
+
+    /* 行間 */
+    line-height: 1.68;
+
+    /* 字間はデフォルト */
+    letter-spacing: normal;
+
+    /* OpenType制御 */
+    font-feature-settings:
+      "palt" 0,
+      "pkna" 1;
+
+    /* 数字幅を揃える */
+    font-variant-numeric: tabular-nums;
+
+    /* フォント */
+    font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+
+    /* 改行アルゴリズム */
+    text-wrap: pretty;
+
+    /* CJK句読点余白調整 */
+    text-spacing-trim: trim-start;
+
+    /* 左揃え */
+    text-align: left;
+
+    /* レンダリング品質 */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
   }
 }

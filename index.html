@@ -31,12 +31,16 @@
     <meta property="og:image:height" content="630" />
 
     <!--fontなどlink-->
-    <link rel="icon" href="/img/COREKARA_logo.jpg" />
+    <link rel="icon" href="/img/favicon.png" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+New&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -118,7 +122,7 @@
         <div
           class="absolute top-[18%] bottom-[55%] left-[5%] flex w-[50%] flex-col justify-center break-keep"
         >
-          <p class="text-20px font-bold text-white">無理に<br>急がせません</p>
+          <p class="text-20px font-bold text-white">無理に<br />急がせません</p>
           <p class="text-14px">
             あなたのペースを大切に。焦らなくていいから<wbr />自分のペースで！
           </p>
@@ -178,7 +182,7 @@
               />
             </h3>
           </div>
-          <p class="w-full max-w-[700px] text-justify text-16px">
+          <p class="w-full max-w-[700px] text-16px">
             一般企業への就職を目指しながら生活リズムを整え、パソコンスキルを身につけます。また、仕事に必要なコミュニケーションや、就職活動についても丁寧にご案内いたします。
           </p>
           <div
@@ -261,7 +265,7 @@
             ></div>
           </div>
           <div
-            class="flex w-full max-w-[700px] items-center justify-center overflow-hidden"
+            class="flex w-full max-w-[700px] flex-col items-center justify-center overflow-hidden"
           >
             <img
               src="/img/dekirukadouka.png"
@@ -368,7 +372,7 @@
               alt="雇用契約を結びます"
             />
           </div>
-          <p class="w-full max-w-[700px] text-justify text-16px">
+          <p class="w-full max-w-[700px] text-16px">
             あなたの得意なことや、やってみたいことをお聞かせください。仕事ありきで考えるのではなく、あなたの【得意なこと・身につけたい技術】を大切にします。一人ひとりに合った仕事を、一緒に見つけていきます。
           </p>
           <p class="w-full max-w-[700px] text-16px">
@@ -493,7 +497,7 @@
             <div
               class="mt-[20px] flex flex-col items-center gap-[8px] text-center"
             >
-              <p class="text-20px">
+              <p class="text-20px font-bold">
                 ｢今の自分に合うかどうか｣は<br />
                 見学でお確かめください
               </p>
@@ -510,7 +514,7 @@
     <section id="e_learning">
       <div class="flex w-full flex-col items-center">
         <div class="flex w-full flex-col items-center overflow-hidden">
-          <h class="w-full">
+          <h2 class="w-full">
             <img
               src="/img/e_learning.png"
               loading="lazy"
@@ -585,13 +589,13 @@
               <dt>C#入門</dt>
               <dd></dd>
             </dl>
-            <div
-              class="mt-[20px] flex flex-col items-center gap-[8px] text-center"
-            >
-              <p class="text-20px">見学・体験を<wbr />とりあえず予約してみる</p>
+            <div class="mt-[20px] flex flex-col items-center gap-[8px]">
+              <p class="text-center text-20px font-bold break-keep">
+                見学・体験を<wbr />とりあえず予約してみる
+              </p>
               <a
                 href="tel:0298288930"
-                class="w-full max-w-[400px] rounded-2xl bg-[#EE94AE] py-[5px] text-20px font-bold break-keep text-white"
+                class="w-full max-w-[400px] rounded-2xl bg-[#EE94AE] py-[5px] text-center text-20px font-bold break-keep text-white"
                 >見学・体験は<wbr />こちら</a
               >
             </div>
@@ -600,20 +604,22 @@
       </div>
     </section>
     <section id="syusyokuritu" class="flex w-full flex-col items-center">
-      <div class="flex flex-col w-full items-center gap-[12px]">
+      <div class="flex w-full flex-col items-center gap-[12px]">
         <div
           class="flex w-full flex-col bg-[url('/img/back_1.jpg')] bg-cover bg-center"
         >
           <h2
-            class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center "
+            class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center"
           >
             <span class="py-[2px] text-base font-bold">DATA</span>
-            <span class="py-[2px] text-32px font-extrabold text-[#046CB4]"
-              >実績に裏付けられた<br /><span
+            <span class="py-[2px] text-32px font-extrabold text-[#046CB4]">
+              実績に裏付けられた<br />
+              <span
                 class="text-outline text-48px [--text-inner-fill:#FCCF00] [--text-outline-stroke:#046CB4]"
-                >就職率</span
-              ></span
-            >
+              >
+                就職率
+              </span>
+            </span>
           </h2>
         </div>
         <p class="w-[90%] max-w-[700px] text-16px">
@@ -625,34 +631,34 @@
         </p>
       </div>
       <div
-        class="flex w-full flex-col items-center gap-[24px] bg-[url('/img/back_2.png')] bg-[length:100%_auto] bg-top bg-repeat-y py-[30px]"
+        class="mt-[30px] flex w-full flex-col items-center gap-[24px] bg-[url('/img/back_2.png')] bg-[length:100%_auto] bg-top bg-repeat-y py-[30px]"
       >
-      <div class="flex flex-col w-full max-w-[700px]">
-        <img
-          src="/img/100％.png"
-          loading="lazy"
-          alt="就職率100%"
-          class="block object-contain"
-        />
-        <ul
-          class="mx-auto w-fit max-w-full px-[8px] text-[clamp(18px,5.6vw,42px)] leading-tight font-bold"
-        >
-          <li class="grid grid-cols-[1em_1fr] gap-x-[4px]">
-            <span>・</span>
-            <span>1年以上の利用者様 就職率100%</span>
-          </li>
-          <li class="grid grid-cols-[1em_1fr] gap-x-[4px]">
-            <span>・</span>
-            <span>6か月以上、1年未満 就職率 66%</span>
-          </li>
-        </ul>
-        <h3 class="block text-20px font-bold">就職先職種</h3>
-        <img
-          src="/img/graph.png"
-          loading="lazy"
-          alt="graph"
-          class="w-full max-w-[600px] object-contain"
-        />
+        <div class="flex w-full max-w-[700px] flex-col gap-[20px]">
+          <img
+            src="/img/100％.png"
+            loading="lazy"
+            alt="就職率100%"
+            class="block object-contain"
+          />
+          <ul
+            class="mx-auto flex w-fit max-w-full flex-col gap-[20px] px-[8px] text-[clamp(18px,5.6vw,42px)] leading-tight font-bold"
+          >
+            <li class="grid grid-cols-[1em_1fr] gap-x-[4px]">
+              <span>・</span>
+              <span>1年以上の利用者様 就職率100%</span>
+            </li>
+            <li class="grid grid-cols-[1em_1fr] gap-x-[4px]">
+              <span>・</span>
+              <span>6か月以上、1年未満 就職率 66%</span>
+            </li>
+          </ul>
+          <h3 class="block text-center text-20px font-bold">就職先職種</h3>
+          <img
+            src="/img/graph.png"
+            loading="lazy"
+            alt="graph"
+            class="w-full max-w-[600px] object-contain"
+          />
         </div>
       </div>
     </section>
@@ -660,13 +666,26 @@
       <div
         class="flex w-full flex-col items-center gap-[20px] bg-[url('/img/back_pink.jpg')] px-[12px] py-[30px]"
       >
-        <h2
-          class="mx-auto mt-[30px] flex w-[100%] max-w-[450px] flex-col text-center"
+        <div class="flex w-full max-w-[450px] flex-col items-center">
+          <h2
+            class="mx-auto flex flex-col py-[2px] text-center text-base text-16px font-bold"
+          >
+            VOICES
+          </h2>
+          <img
+            src="/img/voice.png"
+            loading="lazy"
+            class="object-contain"
+            alt="利用者様の声"
+          />
+        </div>
+        <p
+          class="mx-auto grid w-[80%] max-w-[600px] grid-cols-[1em_1fr] items-start gap-x-[0.2em] text-left text-16px break-keep"
         >
-          <span class="py-[2px] text-base text-16px font-bold">VOICES</span>
-          <img src="/img/voice.png" loading="lazy" class="object-contain" />
-        </h2>
-        <p class="w-full text-center text-16px">↓質問をクリックすると回答を読むことができます。</p>
+          <span>↓</span>
+          <span>質問をクリックすると<wbr />回答を読むことができます。</span>
+        </p>
+
         <details
           class="flex w-full max-w-[750px] flex-col items-center gap-[20px] px-[12px]"
         >
@@ -683,11 +702,14 @@
             </span>
           </summary>
           <div class="flex w-full flex-col gap-[20px] py-[20px]">
-            <div class="flex gap-[16px]">
+            <!--全体-->
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_01.png"
                     loading="lazy"
@@ -707,11 +729,13 @@
               </div>
             </div>
 
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_02.png"
                     loading="lazy"
@@ -729,11 +753,13 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_03.png"
                     loading="lazy"
@@ -751,11 +777,13 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_04.png"
                     loading="lazy"
@@ -792,11 +820,13 @@
             </span>
           </summary>
           <div class="flex w-full flex-col gap-[20px] py-[20px]">
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_01.png"
                     loading="lazy"
@@ -815,11 +845,13 @@
               </div>
             </div>
 
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_02.png"
                     loading="lazy"
@@ -837,11 +869,13 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_03.png"
                     loading="lazy"
@@ -859,11 +893,13 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[16px] sm:flex-row">
+              <!--１枚-->
               <div
-                class="flex w-[22%] max-w-[120px] flex-col items-center justify-center gap-[12px]"
+                class="flex flex-row items-center justify-center gap-[12px] sm:w-[22%] sm:max-w-[120px] sm:flex-col"
               >
-                <div class="shrink-0">
+                <!--内部-->
+                <div class="w-[25%] shrink-0 sm:w-full">
                   <img
                     src="/img/voice_04.png"
                     loading="lazy"
@@ -912,15 +948,15 @@
           id="address"
           class="flex w-full flex-col items-center gap-[8px] text-center text-base"
         >
-          <p class="break-normal">
+          <p class="text-center break-normal">
             <span class="whitespace-nowrap">〒300-0033 茨城県土浦市川口</span
             ><wbr /><span class="whitespace-nowrap"
               >1-1-26 アーバンスクエア土浦602</span
             >
           </p>
-          <p>営業時間：10時〜18時</p>
-          <p>Phone：(029) 828-8930</p>
-          <p>Email：info@supportcreation.com</p>
+          <p class="text-center">営業時間：10時〜18時</p>
+          <p class="text-center">Phone：(029) 828-8930</p>
+          <p class="text-center">Email：info@supportcreation.com</p>
         </div>
       </div>
     </section>
@@ -932,7 +968,7 @@
         >
         <a
           class="w-1/2 bg-[#EE94AE] py-[8px]"
-          href="mailto:info@supportcreation.com?subject=お問い合わせ"
+          href="https://supportcreation.com/contact/"
           >見学・体験はこちら</a
         >
       </div>
