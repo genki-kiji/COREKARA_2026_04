@@ -2,3 +2,10 @@
 @import "./theme.css";
 @import "./base.css";
 @import "./layout.css";
+
+.bg-back_1 {
+  background-image: url('./assets/img/back_1.jpg');
+}
+.bg-back_2 {
+  background-image: url('./assets/img/back_2.png');
+}
