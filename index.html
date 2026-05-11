@@ -63,13 +63,19 @@
       </div>
       <div class="relative flex h-auto w-full flex-col">
         <picture>
-        <img
-          src="./src/assets/img/top.webp"
-          class="block h-auto w-full object-cover"
-          fetchpriority="high"
-          decoding="async"
-          alt="これからを一緒に見つける就労支援です"
-        />
+          <source
+            media="(min-width: 640px)"
+            srcset="./src/assets/img/top.webp"
+          />
+          <img
+            src="./src/assets/img/top_sp.webp"
+            srcset="./src/assets/img/top_sp.webp"
+            class="block h-auto w-full object-cover"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            alt="これからを一緒に見つける就労支援です"
+          />
         </picture>
         <div
           class="absolute bottom-[5%] left-1/2 flex w-[90%] translate-x-[-50%] flex-col items-center"
@@ -109,12 +115,19 @@
         id="priorities"
         class="relative flex aspect-[375/600] w-full flex-col overflow-hidden"
       >
-        <img
-          src="./src/assets/img/kangaekata.webp"
-          class="block h-full w-full object-cover object-center"
-          loading="lazy"
-          alt="priorities"
-        />
+        <picture>
+          <source
+            media="(min-width:640px)"
+            srcset="./src/assets/img/kangaekata.webp"
+          />
+          <img
+            src="./src/assets/img/kangaekata_sp.webp"
+            srcset="./src/assets/img/kangaekata_sp.webp"
+            class="block h-full w-full object-cover object-center"
+            loading="lazy"
+            alt="priorities"
+          />
+        </picture>
         <div class="absolute top-[10%] left-1/2 flex translate-[-50%]">
           <h2 class="mx-auto flex w-[100%] max-w-[450px] flex-col text-center">
             <span class="py-[2px] text-base font-bold">PRIORITIES</span>
@@ -198,12 +211,19 @@
                 class="block w-[140%] max-w-none"
               />
             </h4>
-            <img
-              src="./src/assets/img/ippan_img.webp"
-              loading="lazy"
-              alt="一般企業で働くイメージ"
-              class="block"
-            />
+            <picture>
+              <source
+                media="(min-width:640px)"
+                srcset="./src/assets/img/ippan_img.webp"
+              />
+              <img
+                src="./src/assets/img/ippan_img_sp.webp"
+                srcset="./src/assets/img/ippan_img_sp.webp"
+                loading="lazy"
+                alt="一般企業で働くイメージ"
+                class="block"
+              />
+            </picture>
             <p class="text-base text-yellow-700">
               就職を目指す方とともに、「自分に合う働き方」を探していきます。強みや特性に寄り添いながら、「できること」「向いていること」を少しずつ整理し、無理のないステップで実践的な経験を積み重ねていきます。
             </p>
@@ -388,12 +408,16 @@
             <span class="inline-block">チラシ制作など</span>
           </p>
           <div class="relative h-auto w-full max-w-[700px] overflow-hidden">
-            <img
-              src="./src/assets/img/Agata_img.webp"
-              loading="lazy"
-              alt="A型就労移行支援"
-              class="block h-auto w-full object-cover"
-            />
+            <picture>
+              <source media="(min-width:640px)" srcset="./src/assets/img/Agata_img.webp">
+              <img
+                src="./src/assets/img/Agata_img_sp.webp"
+                srcset="./src/assets/img/Agata_img_sp.webp"
+                loading="lazy"
+                alt="A型就労移行支援"
+                class="block h-auto w-full object-cover"
+              />
+            </picture>
             <p
               class="absolute top-[45%] left-[50%] w-full translate-x-[-50%] text-center text-28px font-bold text-[#FC5A85] sm:text-36px"
             >

@@ -4,8 +4,14 @@
 @import "./layout.css";
 
 .bg-back_1 {
-  background-image: url('./assets/img/back_1.jpg');
+  background-image: url("./assets/img/back_1_sp.webp");
+}
+
+@media (min-width: 640px) {
+  .bg-back_1 {
+    background-image: url("./assets/img/back_1.webp");
+  }
 }
 .bg-back_2 {
-  background-image: url('./assets/img/back_2.png');
+  background-image: url("./assets/img/back_2.png");
 }
