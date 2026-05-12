@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+dist*/
 dist-ssr
 *.local
 
@@ -23,6 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 *.code-workspace
+*.zip
 
 # resources
 COREKARA_LP/
