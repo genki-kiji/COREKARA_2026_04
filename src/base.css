@@ -4,7 +4,8 @@
   *::after {
     box-sizing: border-box;
     min-width: 0;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family:
+      "Zen Kaku Gothic New", "Yu Gothic", "Hiragino Sans", sans-serif;
   }
   p {
     /* 日本語の改行品質 */

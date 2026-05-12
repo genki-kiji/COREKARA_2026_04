@@ -36,11 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+New&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,7 +44,7 @@
   </head>
   <body>
     <section id="top" class="flex w-full flex-col">
-      <div class="flex w-full">
+      <div class="flex h-[80px] w-full">
         <h1
           class="flex w-1/2 flex-col items-center justify-center bg-neutral-800 text-center"
         >
@@ -99,6 +95,7 @@
         <img
           src="./src/assets/img/top_2.webp"
           alt="できるかどうかよりもどうしたらできるかを一緒に考えていきます。"
+          loading="lazy"
           class="block object-cover"
         />
         <div class="absolute top-[2%] left-1/2 w-full translate-x-[-50%]">
@@ -140,7 +137,7 @@
           <p class="text-20px font-bold text-white sm:text-32px">
             無理に<br />急がせません
           </p>
-          <p class="text-14px font-bold sm:text-16px lg:text-24px">
+          <p class="text-14px font-bold sm:text-20px lg:text-28px">
             あなたのペースを大切に。焦らなくていいから<wbr />自分のペースで！
           </p>
         </div>
@@ -150,7 +147,7 @@
           <p class="text-end text-20px font-bold text-white sm:text-32px">
             小さな一歩を大切に
           </p>
-          <p class="text-end text-14px font-bold sm:text-16px lg:text-24px">
+          <p class="text-end text-14px font-bold sm:text-20px lg:text-28px">
             「今日はいけた。」毎日通所できる<wbr />事から始めましょう。
           </p>
         </div>
@@ -160,7 +157,7 @@
           <p class="text-20px font-bold break-keep text-white sm:text-32px">
             一人ひとりに<wbr />合わせた支援
           </p>
-          <p class="text-14px font-bold sm:text-16px lg:text-24px">
+          <p class="text-14px font-bold sm:text-20px lg:text-28px">
             一様に同じプログラムを押し付けません。安心してください。
           </p>
         </div>
@@ -174,7 +171,7 @@
         </h2>
         <img
           src="./src/assets/img/service.webp"
-          class="block object-cover"
+          class="mt-[30px] block object-cover"
           loading="lazy"
           alt="就労移行とA型"
         />
@@ -212,7 +209,7 @@
                 src="./src/assets/img/ippan.webp"
                 alt="一般企業で働きたい方には"
                 loading="lazy"
-                class="block w-[140%] max-w-none"
+                class="block w-[130%] max-w-none"
               />
             </h4>
             <picture class="block h-full w-full">
@@ -580,7 +577,9 @@
             >
               eラーニング1365講座
             </h3>
-            <dl class="grid w-full grid-cols-[70%_25%] gap-x-[8px] text-base">
+            <dl
+              class="grid w-full grid-cols-[70%_25%] gap-x-[8px] text-base sm:text-16px"
+            >
               <dt>MOS対策（Excel・Word・PowerPoint）</dt>
               <dd>197講座</dd>
               <dt>CapCut</dt>
@@ -993,12 +992,14 @@
     </section>
     <footer class="mt-[30px] flex w-full flex-col items-center">
       <p class="text-12px">Copyright 2026 - COREKARA</p>
-      <div class="flex w-full text-center text-16px text-white">
-        <a class="w-1/2 bg-[#72CC99] py-[8px]" href="tel:0298288930"
+      <div class="flex h-[80px] w-full text-center text-16px text-white">
+        <a
+          class="flex h-full w-1/2 items-center justify-center bg-[#72CC99]"
+          href="tel:0298288930"
           >電話で相談する</a
         >
         <a
-          class="w-1/2 bg-[#EE94AE] py-[8px]"
+          class="flex h-full w-1/2 items-center justify-center bg-[#EE94AE]"
           href="https://supportcreation.com/contact/"
           >見学・体験はこちら</a
         >
