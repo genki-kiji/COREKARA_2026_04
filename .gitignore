@@ -12,6 +12,8 @@ dist
 dist*/
 dist-ssr
 *.local
+05A
+05A/
 
 # Editor directories and files
 .vscode/*
@@ -25,6 +27,7 @@ dist-ssr
 *.sw?
 *.code-workspace
 *.zip
+
 
 # resources
 COREKARA_LP/
